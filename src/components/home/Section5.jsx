@@ -1,5 +1,7 @@
 import React from "react";
-import icon1 from "../../assets/images/icon/services-2-icon-1.png";
+import icon1 from "../../assets/images/Home/Less Waste, More Impact.png";
+import icon2 from "../../assets/images/Home/Lower Carbon Footprint.png";
+import icon3 from "../../assets/images/Home/A Step Towards Sustainability.png";
 
 export default function Section5() {
   const data = [
@@ -9,12 +11,12 @@ export default function Section5() {
       body: "Every recycled paper product helps reduce landfill waste.",
     },
     {
-      icon: icon1,
+      icon: icon2,
       head: "Lower Carbon Footprint",
       body: "Manufacturing recycled paper products consumes less energy",
     },
     {
-      icon: icon1,
+      icon: icon3,
       head: "A Step Towards Sustainability",
       body: "Choosing paper over plastic has a big impact on the environment.",
     },

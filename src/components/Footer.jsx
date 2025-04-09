@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/resources/footer-logo.png";
+import logo from "../assets/images/footer-logo.png";
 
 export default function Footer() {
   return (
@@ -9,9 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
           <div className="flex flex-col items-start">
             <div className="grid grid-cols-1 gap-4 md:items-center mb-5 md:mb-12">
-              <img src={logo} className="" />
+              <img src={logo} className="w-[50%]" />
 
-              <p className="">Waste Disposal Management & Pickup Services</p>
+              <p className="">
+                Our commitment to quality and sustainability ensures you get the
+                best products while reducing environmental impact.
+              </p>
 
               <p className="site-footer__social grid-grid-cols-12 gap-4 ">
                 <a href="#">

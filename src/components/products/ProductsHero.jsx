@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function ProductsHero() {
   return (
-    <section className="page-header py-15 md:py-20">
+    <section className="page-header page-header-products py-15 md:py-20">
       <div className="page-header-bg"></div>
       <div className="container mx-auto  ">
         <div className="page-header__inner grid grid-col-1 gap-4">

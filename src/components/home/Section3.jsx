@@ -1,5 +1,4 @@
 import React from "react";
-import section3_about from "../../assets/images/resources/leading-waste-img-1.jpg";
 
 export default function Section3({ propsData }) {
   // console.log(propsData);
@@ -11,7 +10,7 @@ export default function Section3({ propsData }) {
           className={`container grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-20  content-center mx-auto px-0 `}
         >
           <div className={propsData?.direction || ""}>
-            <img src={section3_about} className="w-full" />
+            <img src={propsData?.image || ""} className="w-full" />
           </div>
 
           <div className="d-flex flex-col content-center mt-2 md:mt-0">

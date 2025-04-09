@@ -15,11 +15,11 @@ export default function ContactFrom() {
             <span className="section-title__tagline">Get to Know About Us</span>
           </p>
           <h1 className="text-4xl md:text-5xl font-bold my-3">
-            Have Questions? Feel Free to Write Us
+            We're Here to Help Your Business
           </h1>
           <p className="text-lblack mb-6">
-            Lorem ipsum dolor sit amet, consectetur notted adipis not icing elit
-            sed do eiusmod tempor incididunt.
+            Our commitment to quality and sustainability ensures you get the
+            best products while reducing environmental impact.
           </p>
 
           <div className="space-y-6">
@@ -43,7 +43,7 @@ export default function ContactFrom() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Call Anytime</p>
-                <p className="text-lg font-semibold">+1 - (246) 333-0088</p>
+                <p className="text-lg font-semibold">+91 9824253196</p>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export default function ContactFrom() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Write Email</p>
-                <p className="text-lg font-semibold">needhelp@wostin.com</p>
+                <p className="text-lg font-semibold">yutidispo@gmail.com</p>
               </div>
             </div>
 
@@ -92,7 +92,8 @@ export default function ContactFrom() {
               <div>
                 <p className="text-sm text-gray-500">Visit Us Anytime</p>
                 <p className="text-lg font-semibold">
-                  880 Brooklyn Street New York, USA
+                  138, Ajit Nagar Soc., Near Urmi School, Dinesh Mill Road
+                  Akota, Vadodara, Gujarat, India.
                 </p>
               </div>
             </div>

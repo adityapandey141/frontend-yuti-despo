@@ -114,6 +114,19 @@ a {
   transition: all 500ms ease;
 }
 
+.navbar .icon-phone-ringing svg path {
+  fill: #000;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.navbar:hover .icon-phone-ringing svg path {
+  fill: #558e4c;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+/* 
 .icon-phone-ringing:before {
   content: "\e901";
 }
@@ -128,7 +141,7 @@ a {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 /* hero section (slider css) */
 
@@ -150,10 +163,10 @@ a {
   transition: transform 5s ease-in-out, clip-path 0.5s ease-in-out;
 }
 .slide1 {
-  background-image: url("./assets/images/backgrounds/main-slider-1-1.jpg");
+  background-image: url("./assets/images/Home/slide1.png");
 }
 .slide2 {
-  background-image: url("./assets/images/backgrounds/main-slider-1-2.jpg");
+  background-image: url("./assets/images/Home/slide2.jpg");
 }
 .overlay {
   position: absolute;
@@ -270,6 +283,9 @@ a {
   transition: all 0.5s linear;
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .thm-icon:before {
@@ -294,6 +310,20 @@ a {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.iconbox:hover .thm-icon svg path {
+  fill: #000000 !important;
+  transition: all 0.4s linear;
+}
+
+.thm-icon svg {
+  fill: #ffffff !important;
+  transition: all 0.4s linear;
+}
+.iconbox:hover .thm-icon svg {
+  fill: #000000 !important;
   transition: all 0.4s linear;
 }
 
@@ -387,9 +417,15 @@ a {
   display: block;
 
   z-index: 1;
-  background-image: url("./assets/images/backgrounds/page-header-bg.jpg");
   background-size: cover;
 }
+.page-header-products {
+  background-image: url("./assets/images/Products/productsBanner.webp");
+}
+.page-header-contact {
+  background-image: url("./assets/images/Contact/ContactUs.webp");
+}
+
 .page-header-bg:before {
   position: absolute;
   top: 0;
@@ -501,6 +537,18 @@ a {
   transform: translateY(-50%);
 }
 
+.have-waste__icon svg path {
+  fill: #ecdd5e;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.ctaicon:hover .have-waste__icon svg path {
+  fill: #558e4c;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
 .ctaicon:hover .have-waste__icon {
   opacity: 1;
   background-color: #ffffff;
@@ -511,7 +559,7 @@ a {
   transition: all 0.4s linear;
 }
 
-[class^="icon-"],
+/* [class^="icon-"],
 [class*=" icon-"] {
   font-family: "icomoon" !important;
   speak: never;
@@ -522,10 +570,10 @@ a {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-icon-phone-ringing:before {
+} */
+/* icon-phone-ringing:before {
   content: "\e901";
-}
+} */
 .have-waste__icon:after {
   position: absolute;
   top: 50%;
@@ -539,7 +587,7 @@ icon-phone-ringing:before {
 }
 
 .plistbackground {
-  background-image: url("./assets/images/backgrounds/counter-one-bg.jpg");
+  background-image: url("./assets/images/Products/parralex.webp");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -562,7 +610,7 @@ icon-phone-ringing:before {
   right: 0;
   left: 0;
 
-  background-image: url("./assets/images/backgrounds/waste-materials-bg.jpg");
+  background-image: url("./assets/images/Products/plistbanner.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
