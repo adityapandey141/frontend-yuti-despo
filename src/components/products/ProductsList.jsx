@@ -32,14 +32,14 @@ export default function ProductsList() {
 
             <div className="col-span-2 grid grid-cols-1 gap-2 md:grid-cols-2">
               {categories.map((val, index) => (
-                <div class="text" key={index}>
+                <div className="text" key={index}>
                   <p
                     className=" text-left text-sm md:text-base font-700"
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="900"
                   >
-                    <span class="fa fa-check">* </span> {val.subheading}
+                    <span className="fa fa-check">* </span> {val.subheading}
                   </p>
                 </div>
               ))}

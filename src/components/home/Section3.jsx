@@ -4,7 +4,7 @@ export default function Section3({ propsData }) {
   // console.log(propsData);
   return (
     <>
-      <section className="my-15 md:my-20">
+      <section className="my-15 md:my-20" id={propsData?.id || ""}>
         <div
           id="products"
           className={`container grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-20  content-center mx-auto px-0 `}

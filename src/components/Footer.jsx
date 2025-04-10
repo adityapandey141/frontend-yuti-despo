@@ -1,7 +1,12 @@
 import React from "react";
 import logo from "../assets/images/footer-logo.png";
-
+import { Link } from "react-router";
 export default function Footer() {
+  const quickLinks = [
+    { name: "Home", url: "/" },
+    { name: "Products", url: "/products" },
+    { name: "Contact Us", url: "/contact" },
+  ];
   return (
     <footer className="footer bg-[#404a3d] w-full relative py-5   content-center  text-white md:py-0">
       <div className="overlay"></div>
@@ -12,8 +17,8 @@ export default function Footer() {
               <img src={logo} className="w-[50%]" />
 
               <p className="">
-                Our commitment to quality and sustainability ensures you get the
-                best products while reducing environmental impact.
+                From cups to bowls - practical packaging for real business
+                needs. Let's talk about yours.
               </p>
 
               <p className="site-footer__social grid-grid-cols-12 gap-4 ">
@@ -64,21 +69,6 @@ export default function Footer() {
 
             <div className="mb-4">
               <p className="text-[#a5b9ad] mb-1">Phone</p>
-              <p>+91 7096428461</p>
-            </div>
-
-            <div>
-              <p className="text-[#a5b9ad] mb-1">E-mail</p>
-              <p>Subhashcyadav9@gmail.com</p>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-3xl font-bold uppercase text-yel mb-6">
-              CONTACT INFO
-            </h3>
-
-            <div className="mb-4">
-              <p className="text-[#a5b9ad] mb-1">Phone</p>
               <p>+91 9824253196</p>
             </div>
 
@@ -86,6 +76,18 @@ export default function Footer() {
               <p className="text-[#a5b9ad] mb-1">E-mail</p>
               <p>yutidispo@gmail.com</p>
             </div>
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold uppercase text-yel mb-6">
+              QUICK LINKS
+            </h3>
+            {quickLinks.map((item, index) => (
+              <div className="mb-4" key={index}>
+                <p>
+                  <Link to={item.url}>{item.name}</Link>
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

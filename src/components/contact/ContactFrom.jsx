@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./Form";
 
 export default function ContactFrom() {
   return (
@@ -18,8 +19,8 @@ export default function ContactFrom() {
             We're Here to Help Your Business
           </h1>
           <p className="text-lblack mb-6">
-            Our commitment to quality and sustainability ensures you get the
-            best products while reducing environmental impact.
+            Looking for eco-friendly packaging solutions or want to discuss your
+            bulk requirements?
           </p>
 
           <div className="space-y-6">
@@ -102,44 +103,7 @@ export default function ContactFrom() {
 
         {/* <!-- Right Section --> */}
         <div className=" bg-white shadow-sm rounded-lg p-4 md:p-8">
-          <form action="#" method="POST" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="Your name"
-                className="w-full p-4 border rounded bg-gray-100 focus:outline-none focus:ring-0 focus:ring-dg"
-              />
-              <input
-                type="email"
-                placeholder="Email address"
-                className="w-full p-4 border rounded bg-gray-100 focus:outline-none focus:ring-0 focus:ring-dg"
-              />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="Phone number"
-                className="w-full p-4 border rounded bg-gray-100 focus:outline-none focus:ring-0 focus:ring-dg"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full p-4 border rounded bg-gray-100 focus:outline-none focus:ring-0 focus:ring-dg"
-              />
-            </div>
-            <textarea
-              placeholder="Write message"
-              rows="5"
-              className="w-full p-4 border rounded bg-gray-100 focus:outline-none focus:ring-0 focus:ring-dg"
-            ></textarea>
-
-            <button
-              type="submit"
-              className="thm-btn py-3 px-6 rounded w-full md:w-auto"
-            >
-              Send a Message
-            </button>
-          </form>
+          <Form />
         </div>
       </section>
     </>

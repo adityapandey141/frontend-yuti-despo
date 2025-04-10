@@ -16,7 +16,7 @@ export default function Hero() {
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
   };
 
-  console.log(currentSlide);
+  // console.log(currentSlide);
 
   return (
     <>
@@ -35,13 +35,13 @@ export default function Hero() {
                 data-aos-easing="linear"
                 data-aos-duration="1000"
               >
-                Sustainable Choices <span className="text-yel">,</span>{" "}
+                Sustainable Choices.
                 <br></br>
-                Smarter Business
+                Smarter Business.
               </h1>
               <div className="mt-10">
                 <a
-                  href="tel:+917096428481"
+                  href="tel:+919824253196"
                   data-aos="fade-up"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
@@ -66,12 +66,12 @@ export default function Hero() {
                 data-aos-easing="linear"
                 data-aos-duration="1000"
               >
-                Your Clutter is <br></br>
-                Our Bread <span className="text-yel">&</span> Butter
+                Good for Business. <br></br>Better for the Planet.
+                {/* Our Bread <span className="text-yel">&</span> Butter */}
               </h1>
               <div className="mt-10">
                 <a
-                  href="tel:+917096428481"
+                  href="tel:+919824253196"
                   className="thm-btn  rounded"
                   data-aos="fade-up"
                   data-aos-easing="linear"

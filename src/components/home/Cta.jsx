@@ -52,7 +52,7 @@ export default function Cta() {
                 data-aos-easing="linear"
                 data-aos-duration="900"
               >
-                <a href="tel:12463330088">+91 9824253196</a>
+                <a href="tel:+919824253196">+91 9824253196</a>
               </h1>
             </div>
           </div>

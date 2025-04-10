@@ -1,7 +1,8 @@
 import React from "react";
-import cardImg1 from "../../assets/images/resources/benefit-one-img-1.jpg";
-import cardImg2 from "../../assets/images/resources/benefit-one-img-2.jpg";
-import cardImg3 from "../../assets/images/resources/benefit-one-img-3.jpg";
+import cardImg1 from "../../assets/images/Home/Food and Beverages.jpg";
+import cardImg2 from "../../assets/images/Home/Hospitality.jpg";
+import cardImg3 from "../../assets/images/Home/Tours and Travellers.jpg";
+import cardImg4 from "../../assets/images/Home/E-Commerce.jpg";
 
 export default function Section6() {
   const data = [
@@ -66,7 +67,7 @@ export default function Section6() {
       ),
     },
     {
-      image: cardImg2,
+      image: cardImg4,
       heading: "E-Commerce",
       body: "Enhances unboxing experiences",
       svg: (

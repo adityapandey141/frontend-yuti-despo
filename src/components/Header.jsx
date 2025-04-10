@@ -15,9 +15,9 @@ export default function Header() {
 
   const navItems = [
     { name: "Home", url: "/" },
-    { name: "About", url: "#about" },
+    { name: "About", url: "/#about" },
     { name: "Products", url: "/products" },
-    { name: "Why Us", url: "#about" },
+    { name: "Why Us", url: "/#whyus" },
     { name: "Contact Us", url: "/contact" },
   ];
   return (
@@ -36,11 +36,17 @@ export default function Header() {
             </div>
 
             <div className="col-span-3 hidden md:grid grid-cols-5 gap-0 text-center items-center  md:space-x-3 lg:space-x-5 navmenu">
-              {navItems.map((item, index) => (
-                <Link key={index} to={item.url}>
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item, index) =>
+                item.url.startsWith("/#") ? (
+                  <a key={index} href={item.url}>
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link key={index} to={item.url}>
+                    {item.name}
+                  </Link>
+                )
+              )}
             </div>
 
             <div className="hidden lg:block col-span-1">
@@ -76,9 +82,9 @@ export default function Header() {
                 </div>
                 <div className=" ml-2">
                   <div className="main-header__right-call-number ">
-                    <p>Have Waste/Pickup?</p>
+                    <p>Just call</p>
                     <h5>
-                      <a href="tel:12463330088">+91 9824253196</a>
+                      <a href="tel:+919824253196">+91 9824253196</a>
                     </h5>
                   </div>
                 </div>

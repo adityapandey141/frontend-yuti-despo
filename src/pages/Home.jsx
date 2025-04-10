@@ -11,6 +11,7 @@ import sustainabilityImg from "../assets/images/Home/Protecting Our Planet.webp"
 
 export default function Home() {
   let sustainability = {
+    id: "whyus",
     direction: "order-last",
     image: sustainabilityImg,
     title: " Protecting Our Planet",
@@ -18,6 +19,7 @@ export default function Home() {
     body: "We're committed to reducing environmental impact. Our products are made from responsibly sourced materials, ensuring a minimal ecological footprint without compromising on quality.",
   };
   let aboutus = {
+    id: "about",
     direction: "order-first",
     image: aboutImg,
     title: " About Us",
