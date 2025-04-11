@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="footer bg-[#404a3d] w-full relative py-5   content-center  text-white md:py-0">
       <div className="overlay"></div>
       <div className="container mx-auto  md:px-4 mt-15 md:mt-[100px]">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           <div className="flex flex-col items-start">
             <div className="grid grid-cols-1 gap-4 md:items-center mb-5 md:mb-12">
               <img src={logo} className="w-[50%]" />

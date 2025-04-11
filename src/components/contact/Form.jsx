@@ -128,15 +128,33 @@ export default function Form() {
   const validate = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) newErrors.name = "Name is required.";
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required.";
+    } else {
+      newErrors.name = "";
+    }
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid.";
+    } else {
+      newErrors.email = "";
     }
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
-    if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
-    if (!formData.message.trim()) newErrors.message = "Message is required.";
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required.";
+    } else {
+      newErrors.phone = "";
+    }
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required.";
+    } else {
+      newErrors.subject = "";
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required.";
+    } else {
+      newErrors.message = "";
+    }
 
     return newErrors;
   };

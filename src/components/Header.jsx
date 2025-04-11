@@ -30,7 +30,7 @@ export default function Header() {
                 <img
                   src={logo}
                   alt="Logo"
-                  className="w-[50%] lg:w-[70%] mr-2 inline"
+                  className="w-[90%] lg:w-[70%] mr-2 inline"
                 />
               </a>
             </div>
@@ -144,15 +144,21 @@ export default function Header() {
           </div>
 
           <div className="mt-4 mb-8 text-center">
-            <img src={footerlogo} alt="Logo" className=" w-20 mb-2" />
+            <img src={footerlogo} alt="Logo" className=" w-40 mb-2" />
           </div>
           <div className="mt-5 border-t-1 pt-5"></div>
           <div className="flex flex-col space-y-4">
-            {navItems.map((item, index) => (
-              <Link key={index} to={item.url}>
-                {item.name}
-              </Link>
-            ))}
+            {navItems.map((item, index) =>
+              item.url.startsWith("/#") ? (
+                <a key={index} href={item.url} onClick={toggleSidebar}>
+                  {item.name}
+                </a>
+              ) : (
+                <Link key={index} to={item.url} onClick={toggleSidebar}>
+                  {item.name}
+                </Link>
+              )
+            )}
           </div>
           <div className="mt-5 border-t-1 pt-5">
             <h1 className="text-3xl font-bold text-yel">Address</h1>

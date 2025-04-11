@@ -21,7 +21,7 @@ export default function ProductsList() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 ">
             <div className="col-span-2">
               <h1
-                className="font-bold text-center text-white text-3xl md:text-7xl my-5"
+                className="font-bold md:text-center text-white text-3xl md:text-7xl my-5"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="900"
@@ -34,7 +34,7 @@ export default function ProductsList() {
               {categories.map((val, index) => (
                 <div className="text" key={index}>
                   <p
-                    className=" text-left text-sm md:text-base font-700"
+                    className=" text-left text-md md:text-base font-700"
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="900"
@@ -50,7 +50,7 @@ export default function ProductsList() {
       <section className="bg-dg py-15 plistbackground relative">
         <div className="overlay z-0"></div>
         <div className="container relative  mx-auto z-4">
-          <div className="grid grid-cols-1 items-center  gap-4 md:gap-4 md:mt-20">
+          <div className="grid grid-cols-1 items-center  gap-4 md:gap-4 mt-10 md:mt-20">
             <h1
               className="font-bold text-4xl  text-center text-white  my-5 animate__animated animate__fadeInUp"
               data-aos="fade-up"
@@ -67,7 +67,7 @@ export default function ProductsList() {
                 data-aos-easing="linear"
                 data-aos-duration="1500"
               >
-                View More
+                Choose Sustainability
               </Link>
             </div>
           </div>

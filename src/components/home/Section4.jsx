@@ -12,9 +12,8 @@ export default function Section4() {
       svg: (
         <svg
           enableBackground="new 0 0 512 512"
-          height="60"
           viewBox="0 0 512 512"
-          width="60"
+          className="w-[40px] md:w-[60px] h-[50px] md:h-[60px] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <g id="_x37_5_Paper_Cup">
@@ -39,8 +38,7 @@ export default function Section4() {
           id="Layer_1"
           viewBox="0 0 512.116 512.116"
           xmlSpace="preserve"
-          height="70"
-          width="70"
+          className="w-[50px] md:w-[60px] h-[50px] md:h-[60px] "
         >
           <g>
             <g>
@@ -75,7 +73,7 @@ export default function Section4() {
           enableBackground="new 0 0 593.922 593.922"
           height="60"
           viewBox="0 0 593.922 593.922"
-          width="60"
+          className="w-[50px] md:w-[60px] h-[50px] md:h-[60px] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <g>
