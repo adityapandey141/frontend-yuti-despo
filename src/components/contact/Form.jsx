@@ -109,6 +109,7 @@ export default function Form() {
       setErrors(validationErrors);
       console.log("errors state --", errors);
     } else {
+      setErrors(validationErrors);
       const submitdata = await submitLead();
       if (submitdata.success) {
         setFinalAlert({ message: submitdata.message, type: "success" });
