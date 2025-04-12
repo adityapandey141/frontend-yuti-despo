@@ -101,7 +101,11 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
+    let errorArray = Object.values(validationErrors);
+    const errorArraylength = errorArray.filter(
+      (errorArray) => errorArray.trim().length > 0
+    );
+    if (errorArraylength.length > 0) {
       setErrors(validationErrors);
       console.log("errors state --", errors);
     } else {
