@@ -39,10 +39,22 @@ export default function ProductsCards() {
                 }  bg-black  text-white rounded-lg shadow-lg p-5 text-left bg-opacity-30 hover:bg-opacity-100 transition delay-150 duration-500 ease-in-out hover:-translate-y-1 cursor-pointer`}
               >
                 <img src={value.icon} className="w-10" />
-                <h1 className="text-yel text-2xl font-bold  mt-3">
+                <h1
+                  className="text-yel text-2xl font-bold  mt-3"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
                   {value.head}
                 </h1>
-                <p className="text-gray-800 text-sm mt-3">{value.body}</p>
+                <p
+                  className="text-gray-800 text-sm mt-3"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="900"
+                >
+                  {value.body}
+                </p>
               </div>
             ))}
           </div>

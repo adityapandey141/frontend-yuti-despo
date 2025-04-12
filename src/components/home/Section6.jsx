@@ -118,8 +118,13 @@ export default function Section6() {
                 <div className=" w-25 h-25 bg-dg rounded-full mx-auto thm-icon">
                   {val.svg}
                 </div>
-                <div className="">
-                  <h3 className="text-2xl md:text-4xl font-semibold">
+                <div>
+                  <h3
+                    className="text-2xl md:text-4xl font-semibold"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                  >
                     {val.heading}
                   </h3>
                 </div>

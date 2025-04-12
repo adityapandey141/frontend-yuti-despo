@@ -133,10 +133,22 @@ export default function Section4() {
                   {val.svg}
                 </div>
                 <div className="">
-                  <h3 className="text-3xl md:text-4xl font-semibold">
+                  <h3
+                    className="text-3xl md:text-4xl font-semibold"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="900"
+                  >
                     {val.heading}
                   </h3>
-                  <p className="text-lblack">{val.body}</p>
+                  <p
+                    className="text-lblack"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                  >
+                    {val.body}
+                  </p>
                 </div>
               </div>
             </div>

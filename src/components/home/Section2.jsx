@@ -92,11 +92,21 @@ export default function Section2() {
                 className="grid grid-rows-1 gap-6   md:mt-[-70px] iconbox px:3 md:px-15"
                 key={index}
               >
-                <div className="w-25 h-25 md:w-30 md:h-30 bg-dg rounded-full mx-auto thm-icon text-center">
+                <div
+                  className="w-25 h-25 md:w-30 md:h-30 bg-dg rounded-full mx-auto thm-icon text-center"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
                   {/* <img src={val.image} className="text-white w-[50%] " /> */}
                   {val.svg}
                 </div>
-                <div className="  ">
+                <div
+                  className="  "
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="900"
+                >
                   <h3 className="text-xl md:text-4xl font-semibold">
                     {val.heading}
                   </h3>

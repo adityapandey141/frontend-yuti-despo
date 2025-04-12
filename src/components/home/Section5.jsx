@@ -32,10 +32,20 @@ export default function Section5() {
                 className="bg-black  text-white rounded-lg shadow-lg p-5 md:p-5 text-left bg-opacity-30 hover:bg-opacity-100 transition delay-150 duration-500 ease-in-out hover:-translate-y-1 cursor-pointer"
               >
                 <img src={value.icon} className="" />
-                <h3 className="text-yel text-2xl font-bold  mt-3">
+                <h3
+                  className="text-yel text-2xl font-bold  mt-3"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
                   {value.head}
                 </h3>
-                <p className="text-gray-300 mt-3 text-[#f2f2f2]">
+                <p
+                  className="text-gray-300 mt-3 text-[#f2f2f2]"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="900"
+                >
                   {value.body}
                 </p>
               </div>

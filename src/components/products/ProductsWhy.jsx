@@ -127,14 +127,19 @@ export default function ProductsWhy() {
                   {val.svg}
                 </div>
                 <div className="">
-                  <h3 className="text-2xl md:text-3xl font-semibold">
+                  <h3
+                    className="text-2xl md:text-3xl font-semibold"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                  >
                     {val.heading}
                   </h3>
                   <p
                     className="font-normal text-lblack text-md my-5"
                     data-aos="fade-up"
                     data-aos-easing="linear"
-                    data-aos-duration="1000"
+                    data-aos-duration="900"
                   >
                     {val.body}
                   </p>
