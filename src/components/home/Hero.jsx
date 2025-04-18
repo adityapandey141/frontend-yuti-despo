@@ -7,6 +7,7 @@ export default function Hero() {
   let [currentSlide, setCurrentSlide] = useState(0);
   var settings = {
     dots: false,
+    arrow: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

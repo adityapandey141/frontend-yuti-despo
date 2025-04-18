@@ -248,10 +248,17 @@ a {
 }
 
 .slick-next {
-  right: -10px !important;
+  right: -20px !important;
 }
 .slick-prev {
-  left: -15px !important;
+  left: -20px !important;
+}
+
+.slider-container .slick-next {
+  right: 10px !important;
+}
+.slider-container .slick-prev {
+  left: 10px !important;
 }
 .slick-prev,
 .slick-next {
@@ -259,6 +266,11 @@ a {
   height: 30px !important;
   z-index: 2;
 }
+.slider .slick-prev,
+.slider .slick-next {
+  display: none !important;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: #558e4c !important;
