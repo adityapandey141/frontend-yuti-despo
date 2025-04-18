@@ -1,7 +1,7 @@
 import React from "react";
-import cardImg1 from "../../assets/images/Home/Paper Cups.webp";
-import cardImg2 from "../../assets/images/Home/Paper Bowls.webp";
-import cardImg3 from "../../assets/images/Home/Paper Bags.webp";
+import cardImg1 from "../../assets/images/Home/SINGLEWALL.webp";
+import cardImg2 from "../../assets/images/Home/DoubleWALL.webp";
+import cardImg3 from "../../assets/images/Home/RIPPLEWAll.webp";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
@@ -11,7 +11,8 @@ export default function ProductsSlider() {
     {
       image: cardImg1,
       heading: "Single Wall",
-      body: " Lightweight and budget-friendly, ideal for cold beverages or short-use servings. Available in multiple sizes.",
+      body: " Lightweight and budget-friendly, ideal for cold beverages or short-use servings",
+      AvailableSize: "35ml to 330ml",
       svg: (
         <svg
           enableBackground="new 0 0 512 512"
@@ -32,7 +33,8 @@ export default function ProductsSlider() {
     {
       image: cardImg2,
       heading: "Double Wall",
-      body: "Offers extra insulation for hot drinks, keeping hands comfortable and beverages warm. Available in multiple sizes.",
+      body: "Offers extra insulation for hot drinks, keeping hands comfortable and beverages warm.",
+      AvailableSize: "6 oz., 8 oz., 10 oz. and 12 oz.",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +71,8 @@ export default function ProductsSlider() {
     {
       image: cardImg3,
       heading: "Ripple Wall",
-      body: "Designed for maximum grip and heat protection, preferred for premium beverage services. Available in multiple sizes.",
+      body: "Designed for maximum grip and heat protection, preferred for premium beverage services.",
+      AvailableSize: "6 oz., 8 oz., 10 oz. and 12 oz.",
       svg: (
         <svg
           id="Capa_1"
@@ -118,6 +121,32 @@ export default function ProductsSlider() {
     speed: 2000,
     autoplaySpeed: 3000,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -134,9 +163,9 @@ export default function ProductsSlider() {
           </h1>
         </div>
         <div className=" grid grid-cols-1 container  mx-auto slider-container ">
-          <Slider className="grid grid-cols-3 gap-4 " {...settings}>
+          <Slider className="grid grid-cols-4 gap-4 " {...settings}>
             {data.map((val, index) => (
-              <div className="px-2">
+              <div className="px-2" key={index}>
                 <div
                   className="text-center   bg-white shadow-md iconbox "
                   key={index}
@@ -144,7 +173,7 @@ export default function ProductsSlider() {
                   <div className="">
                     <img src={val.image} />
                   </div>
-                  <div className="grid grid-rows-1 gap-6    iconbox px-5 md:px-15 py-5 md:py-5 ">
+                  <div className="grid grid-rows-1 gap-6    iconbox px-5 md:px-4 py-5 md:py-5 ">
                     {/* <div className=" w-30 h-30 bg-dg rounded-full mx-auto thm-icon">
                     {val.svg}
                   </div> */}
@@ -152,7 +181,11 @@ export default function ProductsSlider() {
                       <h3 className="text-3xl md:text-4xl font-semibold">
                         {val.heading}
                       </h3>
-                      <p className="text-lblack">{val.body}</p>
+                      <p className="text-lblack text-sm">{val.body}</p>
+                      <p className="text-lblack">
+                        <b>Available Size</b> <br></br>
+                        {val.AvailableSize}
+                      </p>
                     </div>
                   </div>
                 </div>
