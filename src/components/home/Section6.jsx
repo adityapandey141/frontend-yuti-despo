@@ -105,7 +105,7 @@ export default function Section6() {
             packaging across different sectors.
           </p>
         </div>
-        <div className=" grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-15 container  mx-auto  ">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-4 container  mx-auto  ">
           {data.map((val, index) => (
             <div
               className="  text-center  bg-white shadow-md iconbox"

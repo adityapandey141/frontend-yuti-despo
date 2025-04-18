@@ -8,6 +8,7 @@ import Section5 from "../components/home/Section5";
 import Section6 from "../components/home/Section6";
 import aboutImg from "../assets/images/Home/Dealing in Sustainable Packaging Solutions.webp";
 import sustainabilityImg from "../assets/images/Home/Protecting Our Planet.webp";
+import ProductsSlider from "../components/home/ProductsSlider";
 
 export default function Home() {
   let sustainability = {
@@ -33,6 +34,7 @@ export default function Home() {
       <Section2 />
       <Section3 propsData={aboutus} />
       <Section4 />
+      <ProductsSlider />
       <Section3 propsData={sustainability} />
       <Section5 />
       <Section6 />

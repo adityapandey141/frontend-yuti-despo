@@ -25,7 +25,6 @@ export default function Form() {
   const handleOnchange = (e) => {
     // console.log(e.target.value);
     const { name, value } = e.target;
-
     // console.log(name, "-- ", value);
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -87,7 +86,7 @@ export default function Form() {
 
       const data = await response.json();
       setCaptcha({ captchaQuestion: data.question });
-      console.log(data.question);
+      // console.log(data.question);
     } catch (error) {
       console.error("Error loading CAPTCHA:", error);
       // setStatus({

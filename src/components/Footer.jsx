@@ -95,7 +95,7 @@ export default function Footer() {
       <div className="border-t border-white-900 mt-10 md:mt-10">
         <div className="container mx-auto mt-5 px-4 text-center md:text-center">
           <p className="text-sm">
-            © 2025 YUTI DESPO | All Rights Reserved | Designed & Developed by
+            © 2025 YUTI DISPO | All Rights Reserved | Designed & Developed by
             Egniol Services Private Limited.
           </p>
         </div>

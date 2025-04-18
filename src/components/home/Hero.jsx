@@ -24,11 +24,19 @@ export default function Hero() {
         <Slider {...settings}>
           <div
             className={`slide h-[70vh] md:h-[100vh] slide1 ${
-              currentSlide === 0 ? "zoom" : ""
+              currentSlide === 0 ? "" : ""
             } `}
           >
             <div className="overlay"></div>
             <div className="slider-content">
+              <p
+                className="text-3xl md:text-4xl font-semibold text-yel"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="800"
+              >
+                Green Hope
+              </p>
               <h1
                 className="font-700 md:font-bold text-5xl md:text-8xl text-white  my-5 animate__animated animate__fadeInUp"
                 data-aos="fade-up"
@@ -55,11 +63,19 @@ export default function Hero() {
 
           <div
             className={`slide h-[70vh] md:h-[100vh] slide2 ${
-              currentSlide === 1 ? "zoom" : ""
+              currentSlide === 1 ? "" : ""
             }   `}
           >
             <div className="overlay"></div>
             <div className="slider-content">
+              <p
+                className="text-3xl md:text-4xl font-semibold text-yel"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="800"
+              >
+                Green Hope
+              </p>
               <h1
                 className="font-700 md:font-bold text-5xl md:text-8xl text-white  my-5 animate__animated animate__fadeInUp"
                 data-aos="fade-up"

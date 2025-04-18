@@ -2,13 +2,16 @@ import React from "react";
 import cardImg1 from "../../assets/images/Home/Paper Cups.webp";
 import cardImg2 from "../../assets/images/Home/Paper Bowls.webp";
 import cardImg3 from "../../assets/images/Home/Paper Bags.webp";
+import Slider from "react-slick";
 
-export default function Section4() {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+export default function ProductsSlider() {
   const data = [
     {
       image: cardImg1,
-      heading: "Paper Cups",
-      body: "Versatile, sturdy cups designed for cafes, restaurants, and corporate events.",
+      heading: "Single Wall",
+      body: " Lightweight and budget-friendly, ideal for cold beverages or short-use servings. Available in multiple sizes.",
       svg: (
         <svg
           enableBackground="new 0 0 512 512"
@@ -28,8 +31,8 @@ export default function Section4() {
     },
     {
       image: cardImg2,
-      heading: "Paper Bowls",
-      body: "Lightweight, eco-friendly, and strong enough to hold your culinary creations.",
+      heading: "Double Wall",
+      body: "Offers extra insulation for hot drinks, keeping hands comfortable and beverages warm. Available in multiple sizes.",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +68,8 @@ export default function Section4() {
     },
     {
       image: cardImg3,
-      heading: "Paper Bags",
-      body: " Branded or plain, our bags are the eco-conscious choice for businesses that care.",
+      heading: "Ripple Wall",
+      body: "Designed for maximum grip and heat protection, preferred for premium beverage services. Available in multiple sizes.",
       svg: (
         <svg
           id="Capa_1"
@@ -106,50 +109,56 @@ export default function Section4() {
       ),
     },
   ];
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+  };
   return (
     <>
       <section className="section4 bg-[#f5f0e9] relative py-10  md:py-15 grid grid-cols-1 gap-4">
         <div className="overlay"></div>
         <div className="d-flex flex-col content-center md:mt-0 container mx-auto text-center">
+          <p className="text-md text-dg ">
+            <span className="section-title__tagline">
+              Favourite for a Reason
+            </span>
+          </p>
           <h1 className="font-bold text-black text-4xl md:text-7xl my-5">
-            For Modern Businesses
+            Paper Cups Lead the Way in Everyday Sustainability
           </h1>
         </div>
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 container  mx-auto  ">
-          {data.map((val, index) => (
-            <div
-              className="  text-center  bg-white shadow-md iconbox"
-              key={index}
-            >
-              <div className="">
-                <img src={val.image} />
-              </div>
-              <div className="grid grid-rows-1 gap-6   mt-[-70px] iconbox px-5 md:px-15 pb-5 md:pb-5">
-                <div className=" w-30 h-30 bg-dg rounded-full mx-auto thm-icon">
-                  {val.svg}
-                </div>
-                <div className="">
-                  <h3
-                    className="text-3xl md:text-4xl font-semibold"
-                    data-aos="fade-up"
-                    data-aos-easing="linear"
-                    data-aos-duration="900"
-                  >
-                    {val.heading}
-                  </h3>
-                  <p
-                    className="text-lblack"
-                    data-aos="fade-up"
-                    data-aos-easing="linear"
-                    data-aos-duration="1000"
-                  >
-                    {val.body}
-                  </p>
+        <div className=" grid grid-cols-1 container  mx-auto slider-container ">
+          <Slider className="grid grid-cols-3 gap-4 " {...settings}>
+            {data.map((val, index) => (
+              <div className="px-2">
+                <div
+                  className="text-center   bg-white shadow-md iconbox "
+                  key={index}
+                >
+                  <div className="">
+                    <img src={val.image} />
+                  </div>
+                  <div className="grid grid-rows-1 gap-6    iconbox px-5 md:px-15 py-5 md:py-5 ">
+                    {/* <div className=" w-30 h-30 bg-dg rounded-full mx-auto thm-icon">
+                    {val.svg}
+                  </div> */}
+                    <div className="">
+                      <h3 className="text-3xl md:text-4xl font-semibold">
+                        {val.heading}
+                      </h3>
+                      <p className="text-lblack">{val.body}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </Slider>
         </div>
       </section>
     </>

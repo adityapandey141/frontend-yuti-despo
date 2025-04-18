@@ -44,17 +44,17 @@ export default function ContactFrom() {
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <path
-                      class="b"
+                      className="b"
                       d="m23.5947,15.0005c.548-1.0177,1.1956-1.996,1.9428-2.9205.7344-.9086.6287-2.236-.1974-3.0621l-3.832-3.832c-.9854-.9854-2.5956-.8934-3.4904.1749-9.0143,10.7619-9.0143,26.515,0,37.2768.8948,1.0683,2.5022,1.163,3.4876.1777l3.4162-3.4162c1.2472-1.2472,1.3503-2.5721.616-3.4807-.7472-.9245-1.3948-1.9027-1.9428-2.9205-.6703-1.2448-1.9774-2.0111-3.3913-2.0111h-3.2796c-1.3552-4.5526-1.3552-9.4226,0-13.9752h3.2796c1.4138,0,2.7209-.7663,3.3913-2.0111Z"
                     ></path>
                     <g>
                       <g>
                         <polyline
-                          class="b"
+                          className="b"
                           points="26.3775 24.6979 23.498 27.5607 26.3775 30.4236"
                         ></polyline>
                         <line
-                          class="b"
+                          className="b"
                           x1="23.498"
                           y1="27.5607"
                           x2="36.7429"
@@ -63,11 +63,11 @@ export default function ContactFrom() {
                       </g>
                       <g>
                         <polyline
-                          class="b"
+                          className="b"
                           points="33.8634 22.528 36.7429 19.6652 33.8634 16.8024"
                         ></polyline>
                         <line
-                          class="b"
+                          className="b"
                           x1="36.7429"
                           y1="19.6652"
                           x2="23.498"
@@ -138,8 +138,8 @@ export default function ContactFrom() {
               <div>
                 <p className="text-sm text-gray-500">Visit Us Anytime</p>
                 <p className="text-lg font-semibold">
-                  138, Ajit Nagar Soc., Near Urmi School, Dinesh Mill Road
-                  Akota, Vadodara, Gujarat, India.
+                  138, Ajit Nagar Society, Nr. Urmi Society, Dinesh Mill Road,
+                  Vadodara-390020.
                 </p>
               </div>
             </div>
